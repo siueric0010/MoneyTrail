@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  rest:
+    build:
+      context: ./rest
+    ports:
+      - 5001:5000
+    volumes:
+      - ./rest/src:/app
