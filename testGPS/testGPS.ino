@@ -24,6 +24,8 @@ void setup() {
 }
 
 void loop() {
+  Serial.println("Test");
+  delay(3000);
   // This sketch displays information every time a new sentence is correctly encoded.
   while (ss.available() > 0) {
     gps.encode(ss.read());
